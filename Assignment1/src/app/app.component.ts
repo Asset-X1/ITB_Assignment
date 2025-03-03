@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { LoginComponent } from './auth-user/login/login.component';
-import { RegisterComponent } from './auth-user/register/register.component';
-import { ForgetPassComponent } from "./auth-user/forget-pass/forget-pass.component";
-import { UserComponent } from "./auth-user/user/user.component";
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+
+
+
 @Component({
   selector: 'app-root',
-  imports: [LoginComponent, UserComponent],
+  imports: [RouterOutlet ,RouterLink,RouterLinkActive],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
