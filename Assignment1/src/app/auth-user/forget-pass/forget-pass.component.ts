@@ -2,10 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-forget-pass',
-  imports: [],
-  templateUrl: './forget-pass.component.html',
-  styleUrl: './forget-pass.component.css'
+  standalone: true,
+  template: `<h2>Forgot Password Page</h2>`,
 })
-export class ForgetPassComponent {
-
-}
+export class ForgetPassComponent {}
